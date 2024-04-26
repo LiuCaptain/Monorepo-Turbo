@@ -4,10 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev:test": "vite --mode test",
+    "dev:production": "vite --mode production",
+    "build:test": "tsc && vite build --mode test",
+    "build:production": "tsc && vite build --mode production",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview --open"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -4,12 +4,16 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "start": "cross-env type=start node start.config.js ",
+    "build": "cross-env type=build node start.config.js ",
+    "preview": "cross-env type=preview node start.config.js "
   },
   "devDependencies": {
+    "@inquirer/select": "^2.3.1",
+    "colorette": "^2.0.20",
+    "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
+    "execa": "^8.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }

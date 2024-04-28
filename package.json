@@ -6,7 +6,9 @@
   "scripts": {
     "start": "cross-env type=start node start.config.js ",
     "build": "cross-env type=build node start.config.js ",
-    "preview": "cross-env type=preview node start.config.js "
+    "preview": "cross-env type=preview node start.config.js ",
+    "prepare": "husky",
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
     "@inquirer/select": "^2.3.1",
@@ -14,6 +16,13 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
     "execa": "^8.0.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "postcss-less": "^6.0.0",
+    "stylelint": "^16.4.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }

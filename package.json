@@ -8,6 +8,7 @@
     "build": "cross-env type=build node start.config.js ",
     "preview": "cross-env type=preview node start.config.js ",
     "prepare": "husky",
+    "commit": "git-cz",
     "lint-staged": "lint-staged"
   },
   "config": {

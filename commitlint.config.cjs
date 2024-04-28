@@ -2,8 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const packages = fs.readdirSync(path.resolve(__dirname, 'packages'));
-const server = fs.readdirSync(path.resolve(__dirname, 'server'));
+const projects = fs.readdirSync(path.resolve(__dirname, 'packages/projects'));
 
 module.exports = {
   rules: {
@@ -13,7 +12,7 @@ module.exports = {
     'subject-empty': [2, 'never'],
     'type-empty': [2, 'never'],
     'subject-case': [0],
-    'scope-enum': [2, 'always', [...packages, server]],
+    'scope-enum': [2, 'always', ['@components', '@share', ...projects, 'monorepo 整体配置']],
     'type-enum': [
       2,
       'always',
@@ -34,45 +33,45 @@ module.exports = {
       footer: '列举关联issue (可选) 例如: #31, #I3244 :\n',
       confirmCommit: '是否提交或修改commit ?'
     },
-    scopes: [...packages, server],
+    scopes: ['@components', '@share', ...projects, 'monorepo 整体配置'],
     types: [
-      { value: 'feat', name: 'feat:     ✨  新增功能', emoji: ':sparkles:' },
-      { value: 'fix', name: 'fix:     🐛  修复缺陷', emoji: ':bug:' },
-      { value: 'docs', name: 'docs:     📝  文档更新', emoji: ':memo:' },
+      { value: 'feat', name: 'feat:       ✨  新增功能', emoji: ':sparkles:' },
+      { value: 'fix', name: 'fix:        🐛  修复缺陷', emoji: ':bug:' },
+      { value: 'docs', name: 'docs:       📝  文档更新', emoji: ':memo:' },
       {
         value: 'style',
-        name: 'style:     💄  代码格式',
+        name: 'style:      💄  代码格式',
         emoji: ':lipstick:'
       },
       {
         value: 'refactor',
-        name: 'refactor:     ♻️   代码重构',
+        name: 'refactor:   ♻️   代码重构',
         emoji: ':recycle:'
       },
       {
         value: 'perf',
-        name: 'perf:     ⚡️  性能提升',
+        name: 'perf:       ⚡️  性能提升',
         emoji: ':zap:'
       },
       {
         value: 'test',
-        name: 'test:     ✅  测试相关',
+        name: 'test:       ✅  测试相关',
         emoji: ':white_check_mark:'
       },
       {
         value: 'build',
-        name: 'build:     📦️   构建相关',
+        name: 'build:      📦️   构建相关',
         emoji: ':package:'
       },
       {
         value: 'ci',
-        name: 'ci:     🎡  持续集成',
+        name: 'ci:         🎡  持续集成',
         emoji: ':ferris_wheel:'
       },
-      { value: 'revert', name: 'revert:   ⏪️  回退代码', emoji: ':rewind:' },
+      { value: 'revert', name: 'revert:     ⏪️  回退代码', emoji: ':rewind:' },
       {
         value: 'chore',
-        name: 'chore:     🔨   其他修改',
+        name: 'chore:      🔨   其他修改',
         emoji: ':hammer:'
       }
     ],

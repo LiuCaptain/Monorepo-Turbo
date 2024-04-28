@@ -3,6 +3,6 @@
   '*.{js,jsx}': ['prettier --write', 'eslint --fix'],
   '*.{ts,tsx}': ['prettier --write', 'eslint --fix'],
   '*.{css,less,scss}': ['prettier --write', 'stylelint --fix'],
-  '*.{html}': ['prettier --write'],
+  '*.html': ['prettier --write'],
   '*.{md,json}': ['prettier --write']
 }

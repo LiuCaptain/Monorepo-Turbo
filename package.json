@@ -10,10 +10,19 @@
     "prepare": "husky",
     "lint-staged": "lint-staged"
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@inquirer/select": "^2.3.1",
     "colorette": "^2.0.20",
+    "commitizen": "^4.3.0",
     "cross-env": "^7.0.3",
+    "cz-git": "^1.9.1",
     "eslint": "^8.57.0",
     "execa": "^8.0.1",
     "husky": "^9.0.11",

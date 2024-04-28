@@ -19,12 +19,12 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@inquirer/select": "^2.3.1",
+    "@inquirer/select": "^2.3.2",
     "colorette": "^2.0.20",
     "commitizen": "^4.3.0",
     "cross-env": "^7.0.3",
     "cz-git": "^1.9.1",
-    "eslint": "^8.57.0",
+    "eslint": "^9.1.1",
     "execa": "^8.0.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
@@ -33,7 +33,7 @@
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.1.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
   }
 }

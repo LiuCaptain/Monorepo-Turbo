@@ -4,5 +4,17 @@
     "stylelint-config-standard-scss",
     "stylelint-config-standard"
   ],
-  "customSyntax": "postcss-less"
+  "customSyntax": "postcss-less",
+  "rules": {
+    "rule-empty-line-before": null,
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "custom-property-empty-line-before": null,
+    "declaration-empty-line-before": null,
+    "value-keyword-case": null,
+    "import-notation": "string",
+    "no-duplicate-selectors": null,
+    "color-hex-length": "long",
+    "media-feature-range-notation": "prefix"
+  }
 }
